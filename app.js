@@ -21,7 +21,8 @@ const isAuth = require('./middleware/is-auth');
 const User = require('./models/user');
 
 const MONGODB_URI =
-    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.2uhnfxw.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
+    'mongodb+srv://joshuamusyoka:joshua2020@cluster0.2uhnfxw.mongodb.net/shop?retryWrites=true&w=majority'
+// `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.2uhnfxw.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
 
 console.log(MONGODB_URI)
 // 'mongodb+srv://joshuamusyoka:joshua2020@cluster0.2uhnfxw.mongodb.net/shop?retryWrites=true&w=majority'
@@ -148,3 +149,5 @@ mongoose
     .catch(err => {
         console.log(err);
     });
+
+
